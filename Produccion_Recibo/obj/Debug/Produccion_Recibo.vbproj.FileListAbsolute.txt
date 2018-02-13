@@ -1,0 +1,17 @@
+C:\Users\Developer\AppData\Local\Temporary Projects\Produccion_Recibo\bin\Debug\Produccion_Recibo.exe.config
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\bin\Debug\Produccion_Recibo.exe.config
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.vbproj.ResolveComReference.cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.vbprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.Batchs.resources
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.FrmP.resources
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.Login.resources
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.Resources.resources
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.vbproj.GenerateResource.Cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.xml
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\bin\Debug\Produccion_Recibo.exe
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\bin\Debug\Produccion_Recibo.pdb
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\bin\Debug\Produccion_Recibo.xml
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.exe
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.pdb
