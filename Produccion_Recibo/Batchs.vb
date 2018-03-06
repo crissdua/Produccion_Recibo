@@ -38,6 +38,7 @@ Public Class Batchs
             While i < (DGV.Rows.Count - 1)
                 FrmP.ba.Add(DGV.Rows(i).Cells.Item(0).Value.ToString)
                 FrmP.quantity.Add(DGV.Rows(i).Cells.Item(1).Value.ToString)
+                FrmP.ancho.Add(DGV.Rows(i).Cells.Item(2).Value.ToString)
                 i = i + 1
             End While
             Me.Hide()
@@ -50,19 +51,23 @@ Public Class Batchs
 
     End Sub
 
-    Private Sub DGV_KeyUp(sender As Object, e As KeyEventArgs) Handles DGV.KeyUp
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
         Dim suma As Double
         Dim queda As Double
         For Each row As DataGridViewRow In DGV.Rows
-            suma += Val(row.Cells(4).Value)
+            suma += Val(row.Cells(1).Value)
         Next
 
         queda = Decimal.Round((Convert.ToDouble(Label2.Text) - suma), 3, MidpointRounding.AwayFromZero)
-        'queda = Convert.ToDouble(Label2.Text) - suma
-        Label6.Text = queda
-        Label6.Refresh()
-
+        If queda = 0 Then
+            Button2.Visible = True
+            Button1.Visible = True
+            Label6.Text = queda
+            Label6.Refresh()
+        Else
+            'queda = Convert.ToDouble(Label2.Text) - suma
+            Label6.Text = queda
+            Label6.Refresh()
+        End If
     End Sub
-
-
 End Class

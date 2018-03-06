@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmP
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmP
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.txtOrder = New System.Windows.Forms.TextBox()
@@ -30,15 +30,14 @@ Partial Class FrmP
         Me.Label13 = New System.Windows.Forms.Label()
         Me.DGV = New System.Windows.Forms.DataGridView()
         Me.BarCodes = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(5, 251)
+        Me.Button4.Location = New System.Drawing.Point(5, 285)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(89, 23)
         Me.Button4.TabIndex = 81
@@ -47,14 +46,14 @@ Partial Class FrmP
         '
         'txtOrder
         '
-        Me.txtOrder.Location = New System.Drawing.Point(62, 23)
+        Me.txtOrder.Location = New System.Drawing.Point(62, 57)
         Me.txtOrder.Name = "txtOrder"
         Me.txtOrder.Size = New System.Drawing.Size(100, 20)
         Me.txtOrder.TabIndex = 80
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(195, 251)
+        Me.Button3.Location = New System.Drawing.Point(195, 285)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(89, 23)
         Me.Button3.TabIndex = 79
@@ -63,7 +62,7 @@ Partial Class FrmP
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(100, 251)
+        Me.Button2.Location = New System.Drawing.Point(100, 285)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(89, 23)
         Me.Button2.TabIndex = 78
@@ -73,7 +72,7 @@ Partial Class FrmP
         'Button1
         '
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button1.Location = New System.Drawing.Point(168, 20)
+        Me.Button1.Location = New System.Drawing.Point(168, 54)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(59, 23)
         Me.Button1.TabIndex = 77
@@ -83,7 +82,7 @@ Partial Class FrmP
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(59, 7)
+        Me.Label13.Location = New System.Drawing.Point(59, 41)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(49, 13)
         Me.Label13.TabIndex = 76
@@ -95,7 +94,7 @@ Partial Class FrmP
         Me.DGV.AllowUserToDeleteRows = False
         Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.BarCodes})
-        Me.DGV.Location = New System.Drawing.Point(62, 49)
+        Me.DGV.Location = New System.Drawing.Point(62, 83)
         Me.DGV.Name = "DGV"
         Me.DGV.ReadOnly = True
         Me.DGV.Size = New System.Drawing.Size(165, 196)
@@ -107,26 +106,31 @@ Partial Class FrmP
         Me.BarCodes.Name = "BarCodes"
         Me.BarCodes.ReadOnly = True
         '
-        'StatusStrip1
+        'ComboBox1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 281)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(296, 22)
-        Me.StatusStrip1.TabIndex = 74
-        Me.StatusStrip1.Text = "StatusStrip1"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Turno 1", "Turno 2", "Corto"})
+        Me.ComboBox1.Location = New System.Drawing.Point(163, 12)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 91
         '
-        'ToolStripStatusLabel1
+        'Label8
         '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
-        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(121, 17)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(38, 13)
+        Me.Label8.TabIndex = 90
+        Me.Label8.Text = "Turno:"
         '
         'FrmP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(296, 303)
+        Me.ClientSize = New System.Drawing.Size(296, 317)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.txtOrder)
         Me.Controls.Add(Me.Button3)
@@ -134,12 +138,10 @@ Partial Class FrmP
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.DGV)
-        Me.Controls.Add(Me.StatusStrip1)
         Me.Name = "FrmP"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Recibo de Produccion"
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,6 +155,6 @@ Partial Class FrmP
     Friend WithEvents Label13 As Label
     Friend WithEvents DGV As DataGridView
     Friend WithEvents BarCodes As DataGridViewTextBoxColumn
-    Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label8 As Label
 End Class
