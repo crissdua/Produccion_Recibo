@@ -37,32 +37,32 @@ Public Class FrmP
     End Sub
 
     Public Function CargaGridLecturaBC()
-        Dim query1 As String
-        query1 = ""
-        Dim query2 As String
-        query2 = ""
-        Try
-            reader = File.OpenText(System.Windows.Forms.Application.StartupPath + "\Recibo\" + txtOrder.Text + ".txt")
-            entra = System.Windows.Forms.Application.StartupPath + "\Recibo\" + txtOrder.Text + ".txt"
-            Dim line As String = Nothing
+        'Dim query1 As String
+        'query1 = ""
+        'Dim query2 As String
+        'query2 = ""
+        'Try
+        '    reader = File.OpenText(System.Windows.Forms.Application.StartupPath + "\Recibo\" + txtOrder.Text + ".txt")
+        '    entra = System.Windows.Forms.Application.StartupPath + "\Recibo\" + txtOrder.Text + ".txt"
+        '    Dim line As String = Nothing
 
-            Dim lines As Integer = 0
-            While (reader.Peek() <> -1)
-                line = reader.ReadLine()
-                Dim rnum As Integer = DGV.Rows.Add()
-                DGV.Rows.Item(rnum).Cells(0).Value = line.ToString
-                System.Windows.Forms.Application.DoEvents()
-            End While
-            reader.Close()
-        Catch ex As Exception
-            MessageBox.Show("El Picking del numero de orden no existe")
-        End Try
+        '    Dim lines As Integer = 0
+        '    While (reader.Peek() <> -1)
+        '        line = reader.ReadLine()
+        '        Dim rnum As Integer = DGV.Rows.Add()
+        '        DGV.Rows.Item(rnum).Cells(0).Value = line.ToString
+        '        System.Windows.Forms.Application.DoEvents()
+        '    End While
+        '    reader.Close()
+        'Catch ex As Exception
+        '    MessageBox.Show("El Picking del numero de orden no existe")
+        'End Try
 
 
     End Function
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        DGV.Rows.Clear()
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        'DGV.Rows.Clear()
         CargaGridLecturaBC()
         Dim turnoAM_I As DateTime = CType("6:00:00 AM", DateTime)
         Dim turnoAM_F As DateTime = CType("6:00:00 PM", DateTime)
@@ -87,7 +87,6 @@ Public Class FrmP
         ElseIf result = DialogResult.No Then
             MessageBox.Show("Puede continuar!")
         ElseIf result = DialogResult.Yes Then
-            DGV.Rows.Clear()
         End If
     End Sub
 
@@ -139,13 +138,13 @@ Public Class FrmP
                 oreceipt.Lines.TransactionType = SAPbobsCOM.BoTransactionTypeEnum.botrntReject
                 'true continua, false termina
 
-                batch.Clear()
+                'batch.Clear()
 
-                    While i < (DGV.Rows.Count)
-                        batch.Add(DGV.Rows(i).Cells(0).Value.ToString)
-                        i = i + 1
-                    End While
-                    frm.load(txtOrder.Text, quantitys, txtOrder.Text)
+                '    While i < (DGV.Rows.Count)
+                '        batch.Add(DGV.Rows(i).Cells(0).Value.ToString)
+                '        i = i + 1
+                '    End While
+                frm.load(txtOrder.Text, quantitys, txtOrder.Text)
                 frm.ShowDialog()
 
                 'encabezado de impresion
@@ -207,13 +206,11 @@ Public Class FrmP
                     sale = System.Windows.Forms.Application.StartupPath + "\Temp\Recibo\" + txtOrder.Text + "-TransFerido" & DateTime.Now.ToString("dd-MM-yyyy-HH-mm-ss") & ".txt"
                     File.Move(entra, sale)
                     txtOrder.Clear()
-                    DGV.Rows.Clear()
                 End If
             End If
 
         Catch ex As Exception
-            MessageBox.Show("Verifique que El archivo Existe en la carpeta Raiz")
-            MessageBox.Show(ex.ToString)
+            MessageBox.Show("Verifique que El numero de documento")
         End Try
     End Function
 
@@ -277,6 +274,20 @@ Public Class FrmP
 
     Private Sub FrmP_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtOrder.Select()
+        Dim turnoAM_I As DateTime = CType("6:00:00 AM", DateTime)
+        Dim turnoAM_F As DateTime = CType("6:00:00 PM", DateTime)
+
+        Dim result As Integer = 0
+        Dim result2 As Integer = 0
+        result = DateTime.Compare(turnoAM_I, TimeOfDay.ToShortTimeString)
+        result2 = DateTime.Compare(turnoAM_F, TimeOfDay.ToShortTimeString)
+        If result = -1 Then
+            If result2 = 1 Then
+                ComboBox1.Text = "Turno 1"
+            Else
+                ComboBox1.Text = "Turno 2"
+            End If
+        End If
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 End Class
