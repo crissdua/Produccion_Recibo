@@ -70,4 +70,18 @@ Public Class Batchs
             Label6.Refresh()
         End If
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim result As Integer = MessageBox.Show("Desea salir del modulo?", "Atencion", MessageBoxButtons.YesNo)
+        If result = DialogResult.No Then
+            MessageBox.Show("Puede continuar")
+        ElseIf result = DialogResult.Yes Then
+            Try
+                con.oCompany.Disconnect()
+            Catch
+            End Try
+            MessageBox.Show("Cancele el Objeto e inicie nuevamente")
+            Me.Hide()
+        End If
+    End Sub
 End Class

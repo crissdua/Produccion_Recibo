@@ -33,11 +33,12 @@ Partial Class FrmP
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(5, 102)
+        Me.Button4.BackgroundImage = Global.Produccion_Recibo.My.Resources.Resources.crear
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button4.Location = New System.Drawing.Point(39, 106)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(89, 23)
+        Me.Button4.Size = New System.Drawing.Size(67, 23)
         Me.Button4.TabIndex = 81
-        Me.Button4.Text = "Aceptar"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'txtOrder
@@ -49,20 +50,23 @@ Partial Class FrmP
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(195, 102)
+        Me.Button3.BackgroundImage = Global.Produccion_Recibo.My.Resources.Resources.button
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button3.Location = New System.Drawing.Point(185, 106)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(89, 23)
+        Me.Button3.Size = New System.Drawing.Size(67, 23)
         Me.Button3.TabIndex = 79
         Me.Button3.Text = "Salir"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(100, 102)
+        Me.Button2.BackgroundImage = Global.Produccion_Recibo.My.Resources.Resources.cancelar
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button2.Location = New System.Drawing.Point(112, 106)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(89, 23)
+        Me.Button2.Size = New System.Drawing.Size(67, 23)
         Me.Button2.TabIndex = 78
-        Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label13
@@ -78,7 +82,7 @@ Partial Class FrmP
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Turno 1", "Turno 2", "Corto"})
-        Me.ComboBox1.Location = New System.Drawing.Point(163, 12)
+        Me.ComboBox1.Location = New System.Drawing.Point(163, 20)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 91
@@ -86,7 +90,7 @@ Partial Class FrmP
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(121, 17)
+        Me.Label8.Location = New System.Drawing.Point(121, 25)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(38, 13)
         Me.Label8.TabIndex = 90
@@ -96,6 +100,8 @@ Partial Class FrmP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Produccion_Recibo.My.Resources.Resources.login
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(296, 141)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label8)
@@ -104,6 +110,7 @@ Partial Class FrmP
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label13)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "FrmP"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Recibo de Produccion"
