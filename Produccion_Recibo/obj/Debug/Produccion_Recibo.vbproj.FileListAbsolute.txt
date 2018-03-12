@@ -36,16 +36,12 @@ C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debu
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.Enterprise.Viewing.ReportSource.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\log4net.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\FlashControlV71.dll
-C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.PromptingClientSDK.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\stdole.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\ShockwaveFlashObjects.dll
-C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\bin\Debug\CrystalDecisions.Enterprise.PluginManager.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.vbprojResolveAssemblyReference.cache
-C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.vbproj.Produccion_Recibo.exe.config
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\obj\Debug\Interop.SAPbobsCOM.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\obj\Debug\Interop.SAPbouiCOM.dll
 C:\Users\Developer\Documents\GitHub\Produccion_Recibo\Produccion_Recibo\obj\Debug\Produccion_Recibo.vbproj.ResolveComReference.cache
